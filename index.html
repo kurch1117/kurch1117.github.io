@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-hant">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keyWords" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>貸款線上申請：臺灣土地銀行 - 個金單一服務平台</title>
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <link rel="shortcut icon" href="/img/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="~/img/favicon/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="~/img/favicon/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="~/img/favicon/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/img/favicon/touch-icon-iphone-plus.png">
+
+    <!--core css-->
+    <link type="text/css" rel="stylesheet" media="screen" href="/css/all.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/css/styles.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/css/styles-responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.css" rel="stylesheet">
+
+    <!--global vendors script-->
+    <script src="/js/lib/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/lib/popper.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <script>(function (e, t, n) { var r = e.querySelectorAll("html")[0]; r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2") })(document, window, 0);</script>
+
+    <style>
+        .page-layout .upload-box {
+            width: 320px;
+            height: 200px;
+            border: 3px dashed #dedede;
+            border-radius: 1rem;
+            margin: 1rem;
+            display: inline-block;
+            background-color: #f4f4f4;
+            position: relative; /* 新增的相對定位 */
+            overflow: hidden; /* 新增的溢出隱藏 */
+            padding: 0; /* 將 padding 設置為 0 */
+        }
+    
+        .upload-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .center-button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px; /* 可根据需要调整垂直居中的位置 */
+        }
+    
+        #button-container {
+            display: inline-block;
+        }
+    
+        /* Center the cropping container */
+        #button-container-front,
+        #button-container-back,
+        #button-container-second-front,
+        #button-container-second-back,
+        #button-container-finance {
+            margin: 0 auto; /* This centers the container horizontally */
+            display: inline-block; /* This ensures the container shrinks to fit its contents */
+        }
+    
+    </style>
+</head>
+<body class="homepage">
+    <div class="page-layout">
+        <header id="header" class="header shadow-sm">
+            <nav class="navbar-main navbar-light">
+                <a class="navbar-brand" href="index.html" title=""> <img src="/img/logo-landbank.png" class="navbar-brand-logo" alt="土地銀行logo" /><span class="navbar-brand-motif">多元數位開戶<span>平台</span></span> </a>
+                <ul class="navbar-nav-main">
+                    <li class="nav-item"> <a class="nav-link nav-loan active" href="/DigitalAccountOpen/Index" title="">線上開戶申請</a></li>
+                    <li class="nav-item"> <a class="nav-link nav-query" href="query-home.html" title="">申請查詢<span>及補件</span></a></li>
+                    <li class="seperate"></li>
+                </ul>
+                <div class="nav-search-item">
+                    <a class="nav-link nav-search" href="#" title="" aria-label="搜尋"></a>
+                    <div class="nav-search-dropdown">
+                        <form class="form-nav-search">
+                            <input type="text" class="input-nav-search" name="" value="" placeholder="請輸入關鍵字">
+                            <button type="submit" class="btn-nav-search"><i class="far fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <div class="page-container bg-grey">
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        <div class="page-title text-center">
+                            <h2>線上開戶申請</h2>
+                        </div>
+                        <div class="step-progress-holder">
+                            <div class="row no-gutters">
+                                <div class="col">
+                                    <div class="step-progress">
+                                        <div class="step-title">請輸入基本資料</div>
+                                        <div class="step-order"><i class="far fa-user-shield"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="step-progress step-progress-active">
+                                        <div class="step-title">證件上傳</div>
+                                        <div class="step-order"><i class="far fa-cloud-upload"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="step-progress">
+                                        <div class="step-title">新台幣數位存款帳戶晶片金融卡</div>
+                                        <div class="step-order"><i class="far fa-edit"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="step-progress">
+                                        <div class="step-title">請輸入申請資料</div>
+                                        <div class="step-order"><i class="far fa-users"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="step-progress">
+                                        <div class="step-title">請確認申請資料</div>
+                                        <div class="step-order"><i class="far fa-clipboard-check"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-body">
+                                <div class="alert alert-warning">
+                                    <div class="content-body">
+                                        <p class="mb-0">為了確保個瀏覽器之相容性，檔案請以英文或數字命名，請避免使用中文命名．</p>
+                                        <ol class="mb-0">
+                                            <li>每一個上傳文件不能超過10MB。</li>
+                                            <li>相片需要充足光源曝光及最想兩百萬畫素之圖檔。</li>
+                                            <li>檔案類型限：JPG、PNG、GIF、JPEG。</li>
+                                            <li>本行將保留接受申請核准與否之權利，本申請書及所附文件將不予退還．</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="card no-border">
+                                    <div class="card-body">
+                                        <h6 class="form-subtitle text-center">上傳申請文件</h6>
+                                        <p class="text-center"><strong><img src="/img/section-title-left.png" alt="" class="section-divider" /> 身份證 <img src="/img/section-title-right.png" alt="" class="section-divider" /></strong></p>
+                                        <p class="text-center"><small>請上傳您的身份證正面與反面照片，限JPG、PNG、GIF及JPEG格式之文件</small></p>
+                                        <div class="text-center">
+                                            <div class="upload-box" id="upload-box-front">
+                                                <br /><br />
+                                                <label class="upload-label" id="upload-label-front">身份證正面</label>
+                                                <div class="box" id="box-front">
+                                                    <input type="file" name="id_front[]" id="id_front" class="inputfile" accept="image/*" onchange="showCroppie('front');" />
+                                                    <label for="id_front"><i class="fal fa-camera"></i> <span>選取檔案</span></label>
+                                                </div>
+                                            </div>
+                                            <div id="croppie-container-front"></div><br />
+                                            <div id="button-container-front" class="text-center" style="display: none;">
+                                                <button id="crop-button-front" class="btn btn-sm btn-brand btn-round">裁剪圖片</button>
+                                            </div>
+                                            <div id="reupload-container-front" class="text-center" style="display: none;">
+                                                <button id="reupload-button-front" class="btn btn-sm btn-secondary btn-round" onclick="reuploadImage('front');">重新上傳</button>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="upload-box" id="upload-box-back">
+                                                <br /><br />
+                                                <label class="upload-label" id="upload-label-back">身份證反面</label>
+                                                <div class="box" id="box-back">
+                                                    <input type="file" name="id_back[]" id="id_back" class="inputfile" accept="image/*" onchange="showCroppie('back');" />
+                                                    <label for="id_back"><i class="fal fa-camera"></i> <span>選取檔案</span></label>
+                                                </div>
+                                            </div>
+                                            <div id="croppie-container-back"></div><br />
+                                            <div id="button-container-back" class="text-center" style="display: none;">
+                                                <button id="crop-button-back" class="btn btn-sm btn-brand btn-round">裁剪圖片</button>
+                                            </div>
+                                            <div id="reupload-container-back" class="text-center" style="display: none;">
+                                                <button id="reupload-button-back" class="btn btn-sm btn-secondary btn-round" onclick="reuploadImage('back');">重新上傳</button>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mt-5"><strong><img src="/img/section-title-left.png" alt="" class="section-divider" /> 第二證件 <img src="/img/section-title-right.png" alt="" class="section-divider" /></strong></p>
+                                        <p class="text-center"><small>請上傳您的身份證正面與反面照片，限JPG、PNG、GIF及JPEG格式之文件</small></p>
+                                        <div class="text-center">
+                                            <div class="upload-box" id="upload-box-second-front">
+                                                <br /><br />
+                                                <label class="upload-label" id="upload-label-second-front">第二證件正面</label>
+                                                <div class="box" id="box-second-front">
+                                                    <input type="file" name="id_front[]" id="second_id_front" class="inputfile" accept="image/*" onchange="showCroppie('second-front');" />
+                                                    <label for="second_id_front"><i class="fal fa-camera"></i> <span>選取檔案</span></label>
+                                                </div>
+                                            </div>
+                                            <div id="croppie-container-second-front"></div><br />
+                                            <div id="button-container-second-front" class="text-center" style="display: none;">
+                                                <button id="crop-button-second-front" class="btn btn-sm btn-brand btn-round">裁剪圖片</button>
+                                            </div>
+                                            <div id="reupload-container-second-front" class="text-center" style="display: none;">
+                                                <button id="reupload-button-second-front" class="btn btn-sm btn-secondary btn-round" onclick="reuploadImage('second-front');">重新上傳</button>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="upload-box" id="upload-box-second-back">
+                                                <br /><br />
+                                                <label class="upload-label" id="upload-label-second-back">第二證件反面</label>
+                                                <div class="box" id="box-second-back">
+                                                    <input type="file" name="id_back[]" id="second_id_back" class="inputfile" accept="image/*"  onchange="showCroppie('second-back');" />
+                                                    <label for="second_id_back"><i class="fal fa-camera"></i> <span>選取檔案</span></label>
+                                                </div>
+                                            </div>
+                                            <div id="croppie-container-second-back"></div><br />
+                                            <div id="button-container-second-back" class="text-center" style="display: none;">
+                                                <button id="crop-button-second-back" class="btn btn-sm btn-brand btn-round">裁剪圖片</button>
+                                            </div>
+                                            <div id="reupload-container-second-back" class="text-center" style="display: none;">
+                                                <button id="reupload-button-second-back" class="btn btn-sm btn-secondary btn-round" onclick="reuploadImage('second-back');">重新上傳</button>
+                                            </div>
+                                        </div>
+                                        <p class="text-center mt-5"><strong><img src="/img/section-title-left.png" alt="" class="section-divider" /> 本人影像 <img src="/img/section-title-right.png" alt="" class="section-divider" /></strong></p>
+                                        <p class="text-center"><small>請上傳您的本人影像照片，限JPG、PNG、GIF及JPEG格式之文件</small></p>
+                                        <div class="text-center">
+                                            <div class="upload-box" id="upload-box-finance">
+                                                <br /><br />
+                                                <label class="upload-label" id="upload-label-finance">本人影像照片</label>
+                                                <div class="box" id="box-finance">
+                                                    <input type="file" name="finance_doc[]" id="id_finance" class="inputfile" accept="image/*" onchange="showCroppie('finance');" />
+                                                    <label for="id_finance"><i class="fal fa-camera"></i> <span>選取檔案</span></label>
+                                                </div>
+                                            </div>
+                                            <div id="croppie-container-finance"></div><br />
+                                            <div id="button-container-finance" class="text-center" style="display: none;">
+                                                <button id="crop-button-finance" class="btn btn-sm btn-brand btn-round">裁剪圖片</button>
+                                            </div>
+                                            <div id="reupload-container-finance" class="text-center" style="display: none;">
+                                                <button id="reupload-button-finance" class="btn btn-sm btn-secondary btn-round" onclick="reuploadImage('finance');">重新上傳</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions text-center no-border">
+                                <a href="/DigitalAccountOpen/ApplyDebitCard" class="btn btn-lg btn-brand btn-round">下一步 <i class="fal fa-arrow-right"></i></a>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="footer">
+            <div class="footer-container section-container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5 col-sm-5">
+                        <div class="footer-logo"><img src="/img/logo-landbank-inverse.png" class="img-fluid" alt="土地銀行logo" /></div>
+                        <ul class="social-links">
+                            <li class="facebook"><a href="#" title="" target="_blank"><i class="fab fa-facebook-square"></i><span class="sr-only">Facebook</span></a></li>
+                            <li class="twitter"><a href="#" title="" target="_blank"><i class="fab fa-twitter-square"></i><span class="sr-only">Twitter</span></a></li>
+                            <li class="linkedin"><a href="#" title="" target="_blank"><i class="fab fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                            <li class="youtube"><a href="#" title="" target="_blank"><i class="fab fa-youtube-square"></i><span class="sr-only">Youtube</span></a></li>
+                            <li class="line"><a href="#" title="" target="_blank"><i class="fab fa-line"></i> <span class="sr-only">Line</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="footer-info list-unstyled mb-0">
+                                    <li>
+                                        <span>營業時間：</span>週一至週五 9:00至15:30<br />
+                                        <small> (延長營業時間之分行，請參考 服務據點說明)</small>
+                                    </li>
+                                    <li><span>總行地址：</span>10047臺北市中正區館前路46號</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="footer-info list-unstyled mb-0">
+                                    <li><span>24小時服務電話： </span>客服中心:02-2314-6633</li>
+                                    <li><span>免付費客戶申訴電話：</span>0800-231-590</li>
+                                    <li><span>總行電話： </span>02-2348-3456</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal section-container"> <span>COPYRIGHT© LANDBANK</span> <span>版權所有 &#8231; 土地銀行</span> <span class="screen-resolution">最佳瀏覽效果請使用 Internet Explorer10.0以上 1920x1080 解析度</span> </div>
+            <div class="footer-tools"> <a id="gotop" class="go-top hidden" onclick="scrollToTop();return false;"><i class="fal fa-chevron-up"></i></a> </div>
+        </div>
+    </div>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
+    <!--裁剪js-->
+<script>
+    var croppieFront;
+    var croppieBack;
+    var croppieSecondFront;
+    var croppieSecondBack;
+    var croppieFinance;
+
+    function showCroppie(side) {
+        var croppieContainerId = 'croppie-container-' + side;
+        var uploadLabelId = 'upload-label-' + side;
+        var buttonId = 'crop-button-' + side;
+
+        var croppieContainer = document.getElementById(croppieContainerId);
+        if (!croppieContainer) {
+            console.error("Croppie container not found");
+            return;
+        }
+
+        var inputId = side.includes('second') ? 'second_id_' + side.split('-')[1] : 'id_' + side;
+
+        console.log("inputId:", inputId)
+
+        var input = document.getElementById(inputId);
+        if (!input) {
+            console.error("Input element not found");
+            return;
+        }
+        var file = input.files[0];
+        if (!file) {
+            console.error("No file selected");
+            return;
+        }
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            var boxId = 'box-' + (side.includes('second') ? 'second-' + side.split('-')[1] : side);
+            var box = document.getElementById(boxId);
+            box.style.display = 'none';
+
+            var uploadLabel = document.getElementById(uploadLabelId);
+            uploadLabel.style.display = 'none';
+
+            croppieContainer.style.display = 'block';
+
+            if (side === 'front') {
+                if (croppieFront) {
+                    croppieFront.destroy();
+                }
+                croppieFront = new Croppie(croppieContainer, {
+                    viewport: { width: 320, height: 200 },
+                    boundary: { width: 350, height: 230 }
+            });
+                croppieFront.bind({
+                    url: e.target.result
+                });
+                document.getElementById('button-container-front').style.display = 'inline-block';
+                document.getElementById('upload-box-front').classList.add('cropping');
+            } else if (side === 'back') {
+                if (croppieBack) {
+                    croppieBack.destroy();
+                }
+                croppieBack = new Croppie(croppieContainer, {
+                    viewport: { width: 320, height: 200 },
+                    boundary: { width: 350, height: 230 }
+                });
+                croppieBack.bind({
+                    url: e.target.result
+                });
+                document.getElementById('button-container-back').style.display = 'inline-block';
+                document.getElementById('upload-box-back').classList.add('cropping');
+            } else if (side.includes('second-front')) {
+                if (croppieSecondFront) {
+                    croppieSecondFront.destroy();
+                }
+                croppieSecondFront = new Croppie(croppieContainer, {
+                    viewport: { width: 320, height: 200 },
+                    boundary: { width: 350, height: 230 }
+                });
+                croppieSecondFront.bind({
+                    url: e.target.result
+                });
+                document.getElementById('button-container-second-front').style.display = 'inline-block';
+                document.getElementById('upload-box-second-front').classList.add('cropping');
+            } else if (side.includes('second-back')) {
+                if (croppieSecondBack) {
+                    croppieSecondBack.destroy();
+                }
+                croppieSecondBack = new Croppie(croppieContainer, {
+                    viewport: { width: 320, height: 200 },
+                    boundary: { width: 350, height: 230 }
+                });
+                croppieSecondBack.bind({
+                    url: e.target.result
+                });
+                document.getElementById('button-container-second-back').style.display = 'inline-block';
+                document.getElementById('upload-box-second-back').classList.add('cropping');
+            } else if (side === 'finance') {
+                if (croppieFinance) {
+                    croppieFinance.destroy();
+                }
+                croppieFinance = new Croppie(croppieContainer, {
+                    viewport: { width: 320, height: 200 },
+                    boundary: { width: 350, height: 230 }
+                });
+                croppieFinance.bind({
+                    url: e.target.result
+                });
+                document.getElementById('button-container-finance').style.display = 'inline-block';
+                document.getElementById('upload-box-finance').classList.add('cropping');
+            }
+        };
+
+        reader.readAsDataURL(file);
+    }
+
+    // 当重新上传按钮被点击时，将对应的上传框恢复到初始状态
+    function reuploadImage(side) {
+        event.preventDefault(); // 阻止默认行为
+
+        var uploadBoxId = 'upload-box-' + side;
+        var reuploadContainerId = 'reupload-container-' + side;
+
+        // 显示上传框和隐藏重新上传按钮
+        document.getElementById(uploadBoxId).style.display = 'inline-block';
+        document.getElementById(reuploadContainerId).style.display = 'none';
+
+        // 调用创建上传框的函数
+        createUploadBox(side);
+    }
+
+    function createUploadBox(side) {
+        var uploadBoxId = 'upload-box-' + side;
+        var boxId = 'box-' + side;
+        var uploadLabelId = 'upload-label-' + side;
+        var labelContent = ''; // 初始化标签内容变量
+
+        // 根据 side 参数设置标签内容
+        switch (side) {
+            case 'front':
+                labelContent = '身份證正面';
+                inputId = 'id_front';
+                break;
+            case 'back':
+                labelContent = '身份證反面';
+                inputId = 'id_back';
+                break;
+            case 'second-front':
+                labelContent = '第二證件正面';
+                inputId = 'second_id_front';
+                break;
+            case 'second-back':
+                labelContent = '第二證件反面';
+                inputId = 'second_id_back';
+                break;
+            case 'finance':
+                labelContent = '本人影像照片';
+                inputId = 'id_finance';
+                break;
+            default:
+                labelContent = ''; // 默认为空
+                break;
+        }
+
+        // 清除已经上传的图片
+        document.getElementById(uploadBoxId).innerHTML = '';
+
+        // 创建上传框的 HTML 结构
+        var uploadBox = document.getElementById(uploadBoxId);
+        var br1 = document.createElement('br');
+        var br2 = document.createElement('br');
+        var label = document.createElement('label');
+        label.className = 'upload-label';
+        label.id = uploadLabelId;
+        label.textContent = labelContent; // 设置标签内容
+        var divBox = document.createElement('div');
+        divBox.className = 'box';
+        divBox.id = boxId;
+        var input = document.createElement('input');
+        input.type = 'file';
+        input.name = 'id_' + side + '[]'; // 根据 side 参数设置文件名
+        input.id = inputId; // 設置 input 的 id
+        input.className = 'inputfile';
+        input.accept = 'image/*';
+        input.setAttribute('onchange', 'showCroppie("' + side + '")');
+        var labelFor = document.createElement('label');
+        labelFor.setAttribute('for', inputId);
+        labelFor.innerHTML = '<i class="fal fa-camera"></i> <span>選取檔案</span>';
+
+        // 将创建的元素添加到上传框中
+        uploadBox.appendChild(br1);
+        uploadBox.appendChild(br2);
+        uploadBox.appendChild(label);
+        divBox.appendChild(input);
+        divBox.appendChild(labelFor);
+        uploadBox.appendChild(divBox);
+    }
+
+    document.getElementById('crop-button-front').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        croppieFront.result('canvas').then(function (result) {
+            var img = document.createElement('img');
+            img.src = result;
+
+            var uploadBox = document.getElementById('upload-box-front');
+            uploadBox.innerHTML = '';
+            uploadBox.appendChild(img);
+
+            croppieFront.destroy();
+            croppieFront = null; // 设置为 null，以便下次重新创建
+
+            document.getElementById('button-container-front').style.display = 'none';
+            document.getElementById('croppie-container-front').style.display = 'none';
+            document.getElementById('upload-box-front').classList.remove('cropping');
+            // 显示重新上传按钮
+            document.getElementById('reupload-container-front').style.display = 'inline-block';
+        });
+    });
+
+    document.getElementById('crop-button-back').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        croppieBack.result('canvas').then(function (result) {
+            var img = document.createElement('img');
+            img.src = result;
+
+            var uploadBox = document.getElementById('upload-box-back');
+            uploadBox.innerHTML = '';
+            uploadBox.appendChild(img);
+
+            croppieBack.destroy();
+            croppieBack = null; // 设置为 null，以便下次重新创建
+
+            document.getElementById('button-container-back').style.display = 'none';
+            document.getElementById('croppie-container-back').style.display = 'none';
+            document.getElementById('upload-box-back').classList.remove('cropping');
+            // 显示重新上传按钮
+            document.getElementById('reupload-container-back').style.display = 'inline-block';
+        });
+    });
+
+    document.getElementById('crop-button-second-front').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        croppieSecondFront.result('canvas').then(function (result) {
+            var img = document.createElement('img');
+            img.src = result;
+
+            var uploadBox = document.getElementById('upload-box-second-front');
+            uploadBox.innerHTML = '';
+            uploadBox.appendChild(img);
+
+            croppieSecondFront.destroy();
+            croppieSecondFront = null;
+
+            document.getElementById('button-container-second-front').style.display = 'none';
+            document.getElementById('croppie-container-second-front').style.display = 'none';
+            document.getElementById('upload-box-second-front').classList.remove('cropping');
+            document.getElementById('reupload-container-second-front').style.display = 'inline-block';
+        });
+    });
+
+    document.getElementById('crop-button-second-back').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        croppieSecondBack.result('canvas').then(function (result) {
+            var img = document.createElement('img');
+            img.src = result;
+
+            var uploadBox = document.getElementById('upload-box-second-back');
+            uploadBox.innerHTML = '';
+            uploadBox.appendChild(img);
+
+            croppieSecondBack.destroy();
+            croppieSecondBack = null;
+
+            document.getElementById('button-container-second-back').style.display = 'none';
+            document.getElementById('croppie-container-second-back').style.display = 'none';
+            document.getElementById('upload-box-second-back').classList.remove('cropping');
+            document.getElementById('reupload-container-second-back').style.display = 'inline-block';
+        });
+    });
+
+    document.getElementById('crop-button-finance').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        croppieFinance.result('canvas').then(function (result) {
+            var img = document.createElement('img');
+            img.src = result;
+
+            var uploadBox = document.getElementById('upload-box-finance');
+            uploadBox.innerHTML = '';
+            uploadBox.appendChild(img);
+
+            croppieFinance.destroy();
+            croppieFinance = null;
+
+            document.getElementById('button-container-finance').style.display = 'none';
+            document.getElementById('croppie-container-finance').style.display = 'none';
+            document.getElementById('upload-box-finance').classList.remove('cropping');
+            document.getElementById('reupload-container-finance').style.display = 'inline-block';
+        });
+    });
+
+</script>
+
+</body>
+</html>
